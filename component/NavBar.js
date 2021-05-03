@@ -1,36 +1,32 @@
-import { PageHeader, Menu, Typography } from "antd"
 import Link from "next/link";
-const { SubMenu } = Menu
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 const NavBar = () => {
   return (
-    <div className="container-fluid">
-      <div className="header">
-        <div className="logo">
-          <Menu theme="light" mode="horizontal">
-            <Menu.Item>
-              <Link href="/"><a>Beranda</a></Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link href="/"><a>Artikel</a></Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link href="http://ppdb.smaplyk.sch.id/"><a>PPDB</a></Link>
-            </Menu.Item>
-            <Menu.Item>
-              <Link href="http://elearning2.smaplyk.sch.id/"><a>E-Learning</a></Link>
-            </Menu.Item>
-            <SubMenu key="about" title="Tentang Kami">
-              <Menu.ItemGroup>
-                <Menu.Item key="about:1"><Link href=""><a>Sejarah Paroki</a></Link></Menu.Item>
-                <Menu.Item key="about:2">Pastor Paroki</Menu.Item>
-                <Menu.Item key="about:3">Dewan Paroki</Menu.Item>
-              </Menu.ItemGroup>
-            </SubMenu>
-          </Menu>
-        </div>
-      </div>
-    </div>
+    <>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="/">Navbar</Navbar.Brand>
+          <Nav className="mr-auto">
+            <Nav.Link href="#">PPDB</Nav.Link>
+            <Link href="/artikel">Artikel</Link>
+            <Nav.Link href="/tentang">Tentang</Nav.Link>
+            <Nav.Link href="#">E-Learning</Nav.Link>
+          </Nav>
+          
+          <Navbar.Text>
+            <a href="https://instagram.com">
+              <FontAwesomeIcon icon={faInstagram} size="lg" />
+            </a>
+            <a href="https://youtube.com">
+              <FontAwesomeIcon icon={faYoutube} size="lg" />
+            </a>
+          </Navbar.Text>
+        </Container>
+      </Navbar>
+    </>
   );
 }
 

@@ -1,14 +1,26 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import DefaultLayout from '../component/layout/DefaultLayout'
-import 'antd/dist/antd.css';
-import '../styles/globals.css'
-
+import Head from "next/head";
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <DefaultLayout>
-      <Component {...pageProps} />
-    </DefaultLayout>
-  ) 
-}
+    <>
+      <Head>
+        <title>App</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/theme.css"></link>
+      </Head>
+      <DefaultLayout>
+        <Container>
+        
+        </Container>
+      </DefaultLayout>
 
-export default MyApp
+      <Component {...pageProps} />
+    </>
+  );
+}
+export default MyApp;
