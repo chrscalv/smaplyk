@@ -1,7 +1,13 @@
+import DefaultLayout from "../component/layout/DefaultLayout";
 
-
-export default function tentang() {
+function Tentang() {
   return (
-    <p>tentang js</p>
+    <DefaultLayout pageTitle="Tentang">
+    <div className="pt-24">
+      <p>tentang js</p>
+    </div>
+    </DefaultLayout>
   )
 }
+
+export default Tentang;
