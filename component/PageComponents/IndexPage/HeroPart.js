@@ -1,10 +1,17 @@
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import "aos/dist/aos.css";
+
 const HeroPart = () => {
+    useEffect(() => {
+        AOS.init();
+      }, []);
   return (
     <>
       <div className="gradient pt-24">
         <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           {/*Left Col*/}
-          <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+          <div data-aos={"fade-right"} data-aos-delay={"500"} className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p className="uppercase tracking-loose w-full">
               What business are you?
             </p>
@@ -20,8 +27,8 @@ const HeroPart = () => {
             </button>
           </div>
           {/*Right Col*/}
-          <div className="w-full md:w-3/5 py-6 float-right">
-            <img className="w-full md:w-4/5 z-50" src="https://www.tailwindtoolbox.com/templates/hero.png" />
+          <div className="w-full md:w-3/5 py-6">
+            <img data-aos={"fade-left"} data-aos-delay={"500"} className="w-full md:w-4/5 z-50 float-right" src="https://www.tailwindtoolbox.com/templates/hero.png" />
           </div>
         </div>
       </div>
