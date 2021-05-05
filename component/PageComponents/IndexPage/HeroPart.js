@@ -9,7 +9,7 @@ const HeroPart = () => {
   return (
     <>
       <div className="gradient pt-24">
-        <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <div className="aos_anim container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
           {/*Left Col*/}
           <div data-aos={"fade-right"} data-aos-delay={"500"} className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p className="uppercase tracking-loose w-full">
