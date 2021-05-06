@@ -3,7 +3,7 @@ import DefaultLayout from "../component/layout/DefaultLayout";
 function Tentang() {
   return (
     <DefaultLayout pageTitle="Tentang">
-    tentang js
+    <div className="pt-24">tentang js</div>
     </DefaultLayout>
   )
 }

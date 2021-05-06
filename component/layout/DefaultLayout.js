@@ -14,6 +14,8 @@ const DefaultLayout = (props) => {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         
         <link rel="icon" href="/logo-sma.png"/>
+        <style dangerouslySetInnerHTML={{__html: "\n.dropdown:hover > .dropdown-content {\n\tdisplay: block;\n}\n" }} />
+
         <style dangerouslySetInnerHTML={{__html: "\n.aos_anim {\n  overflow-x: hidden; \n  overflow-y: hidden;\n}\n" }} />
         <style dangerouslySetInnerHTML={{__html: "\n      .gradient {\n        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);\n      }\n    " }} />
        </Head>

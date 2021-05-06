@@ -34,7 +34,7 @@ const NavBar = () => {
       }
       return false;
     }
-    
+
   }, []);
 
   return (
@@ -56,27 +56,47 @@ const NavBar = () => {
           </div>
           <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
             <ul className="list-reset lg:flex justify-end flex-1 items-center">
+
+              <li className="mr-3 dropdown">
+                <a className="font-semibold inline-flex items-center">
+                  Dropdown <i className="fas fa-angle-down"></i>
+                </a>
+                <ul className="dropdown-content absolute hidden text-gray-700 pt-1">
+                  <li><a className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Option 1</a></li>
+                  <li><a className="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Option 2</a></li>
+
+                  <li><a className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Option 4</a></li>
+                </ul>
+              </li>
+
               <li className="mr-3">
                 <Link href="/tentang">
-                  <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Tentang</a>
+                  <a className="font-semibold inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Tentang</a>
                 </Link>
               </li>
               <li className="mr-3">
                 <Link href="/artikel">
-                  <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Artikel</a>
+                  <a className="font-semibold inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Artikel</a>
                 </Link>
 
               </li>
+
               <li className="mr-3">
-                <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
+                <a className="font-semibold inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">E-Learning</a>
               </li>
+
             </ul>
+
+
+
+
             <Link href="http://ppdb.smaplyk.sch.id/">
               <button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                 PPDB
                 </button>
             </Link>
           </div>
+
         </div>
       </nav>
     </>
