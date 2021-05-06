@@ -37,13 +37,13 @@ const Footer = () => {
                                 <p className="uppercase text-gray-500 md:mb-6">Social</p>
                                 <ul className="list-reset mb-6">
                                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                        <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500"><i class="fab fa-instagram"></i> Instagram</a>
+                                        <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500"><i className="fab fa-instagram"></i> Instagram</a>
                                     </li>
                                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                        <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500"><i class="fab fa-facebook"></i> Facebook</a>
+                                        <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500"><i className="fab fa-facebook"></i> Facebook</a>
                                     </li>
                                     <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                        <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500"><i class="fab fa-youtube"></i> YouTube</a>
+                                        <a href="#" className="no-underline hover:underline text-gray-800 hover:text-pink-500"><i className="fab fa-youtube"></i> YouTube</a>
                                     </li>
                                 </ul>
                             </div>
@@ -66,7 +66,7 @@ const Footer = () => {
                     <div className="mx-auto">
                         <ul className="justify-center flex flex-">
                             <li className=" active px-md-3 px-2">
-                                2021 © SMA PL | managed by <a className=" text-gray-700 text-sm hover:text-gray-900 transition duration-500 ease-in-out" href="https://github.com/ChrstCalv"><i class="fab fa-github"></i> ChrstCalv</a>
+                                2021 © SMA PL | managed by <a className=" text-gray-700 text-sm hover:text-gray-900 transition duration-500 ease-in-out" href="https://github.com/ChrstCalv"><i className="fab fa-github"></i> ChrstCalv</a>
                             </li>
                         </ul>
                     </div>

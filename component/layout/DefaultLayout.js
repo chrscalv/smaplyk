@@ -3,6 +3,7 @@ import Footer from "../Footer";
 import Head from "next/head";
 
 const DefaultLayout = (props) => {
+  
   return (
     <>
       <Head>
